@@ -1,37 +1,45 @@
 "use strict";
 
-// orderdId: DataTypes.INTEGER,
-//     productId: DataTypes.INTEGER,
-//     quantity: DataTypes.INTEGER
-
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkInsert("productOrders", [
+    return queryInterface.bulkInsert("orders", [
       {
-        orderId: 1,
-        productId: 2,
-        quantity: 3,
+        customerId: 1,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        orderId: 2,
-        productId: 2,
-        quantity: 1,
+        customerId: 2,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        orderId: 3,
-        productId: 1,
-        quantity: 7,
+        customerId: 3,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        orderId: 1,
-        productId: 3,
-        quantity: 5,
+        customerId: 4,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        customerId: 5,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        customerId: 4,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        customerId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        customerId: 2,
         createdAt: new Date(),
         updatedAt: new Date(),
       },
